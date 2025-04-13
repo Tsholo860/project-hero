@@ -1,0 +1,64 @@
+:root{
+    --background-color:#F9F7FE;
+    --button-color:#6C63FF;
+    --primary-font:'Playfair Display',serif;
+    --secondary-font:'Poppins',sans-serif;
+    --greeting-color-font:#272142;
+    
+}
+body{
+    margin: 0;
+    background-color: var(--background-color);
+}
+h1,h2,h3,h4,h5,h6{
+    color:black;
+    font-weight: bold;
+    font-family: var(--primary-font);
+}
+
+.container{
+    background: #f9f7fe;
+    text-align: center;
+    padding:160px 20px;
+}
+.greeting{
+    display: block;
+    font-family: var(--secondary-font);
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--greeting-color-font);
+    
+}
+.header{
+    display: block;
+    text-align: center;
+    padding: 40px 10px;
+    font-family: var(--primary-font);
+    font-size: 96px;
+    font-weight: bold;
+
+}
+.details{
+    padding: 0;
+    display: block;
+    line-height: 2;
+    font-family: var(--primary-font);
+    font-weight:normal;
+    font-size: 24px;
+
+}
+.btn-contaner{
+    padding: 0;
+}
+
+.btn-hero{
+padding:15px 30px;
+font-size: 18px;
+line-height:27px;
+color:#fff;
+border-radius:4px;
+background-color:var(--button-color);
+text-decoration:underline;
+
+}
+
