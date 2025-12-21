@@ -7,8 +7,8 @@
     
 }
 body{
-    margin: 0;
     background-color: var(--background-color);
+    font-family: var(--secondary-font);
 }
 h1,h2,h3,h4,h5,h6{
     color:black;
@@ -16,33 +16,28 @@ h1,h2,h3,h4,h5,h6{
     font-family: var(--primary-font);
 }
 
+p{
+    font-weight: normal;
+}
 .container{
     background: #f9f7fe;
     text-align: center;
-    padding:160px 20px;
+    padding: 160px 20px;
 }
-.greeting{
-    display: block;
-    font-family: var(--secondary-font);
+.container p{
     font-size: 36px;
+    margin: 0;
     font-weight: bold;
     color: var(--greeting-color-font);
     
 }
-.header{
-    display: block;
-    text-align: center;
-    padding: 40px 10px;
-    font-family: var(--primary-font);
+.container h1{
     font-size: 96px;
-    font-weight: bold;
 
 }
-.details{
-    padding: 0;
-    display: block;
+.container h2{
     line-height: 2;
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     font-weight:normal;
     font-size: 24px;
 
