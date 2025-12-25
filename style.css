@@ -88,6 +88,10 @@ padding: 120px 60px;
     font-size: 44px;
     line-height: 2;
 }
+.description{
+    font-size: 18px;
+}
+
     .project-description{
         padding:0;
         text-align: center;
