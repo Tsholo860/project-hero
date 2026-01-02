@@ -1,5 +1,5 @@
 :root{
-    --background-color:#f9effc;
+    --background-color:#f8f6fc;
     --button-color:#ff5861;
     --primary-font:'Playfair Display',serif;
     --secondary-font:'Poppins',sans-serif;
@@ -63,8 +63,8 @@ h2{
 .content h3{
     font-size: 24px;
     font-family: var(--secondary-font);
-    line-height:1;
-    margin: 20px 0 0;
+    line-height: 2;
+    margin-top: 20px 0 0;
 }
 .content p{
 font-size: 16px;
@@ -102,18 +102,61 @@ text-decoration:none;
 .project-description{
 padding: 120px 60px;
 }
+.logo{
+    max-height: 40px;
+    margin-right: 16px;
+}
+
+.navbar-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav{
+    padding: 20px 0;
+    align-items: center;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+nav li{
+    display: block;
+    list-style: none;
+    line-height: 42px;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(68, 67, 67);
+    transition: all 100ms ease-in-out;
+}
+nav a:hover, nav li.active a{
+    color: var(--button-color);
+}
+
 
 @media (max-width:900px){
-    .container{
-        padding: 80px 20px;
-    }
-    h2{
-        font-size: 44px;
-    }
-    .container h1{
+    
+      .container h1{
     font-size: 44px;
     line-height: 2;
 }
+ h2{
+        font-size: 44px;
+    }
+  
+    .container{
+        padding: 80px 20px;
+    }
+    
 .description{
     font-size: 18px;
 }
@@ -125,5 +168,16 @@ padding: 120px 60px;
     .content h1 {
         text-align: center;
         padding: 0;
+    }
+    
+    /* Make navbar padding a bit larger on small screens and reduce gaps */
+    .navbar-container{
+        padding: 0 24px;
+    }
+    nav ul{
+        gap: 14px;
+    }
+    .logo{
+        margin-right: 12px;
     }
 }
