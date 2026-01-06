@@ -1,6 +1,7 @@
 :root{
-    --background-color:#f8f6fc;
+    --background-color:#e6e7eb;
     --button-color:#ff5861;
+    --container-color:#fae4f2;
     --primary-font:'Playfair Display',serif;
     --secondary-font:'Poppins',sans-serif;
     --greeting-color-font:#272142;
@@ -22,7 +23,7 @@ p{
     line-height: 30px;
 }
 .container{
-    background: #fae4f2;
+    background:var(--container-color);
     text-align: center;
     padding: 160px 20px;
 }
@@ -95,7 +96,7 @@ text-decoration:none;
     border: 1px solid var(--button-color);
     padding: 15px 30px;
     font-size: 18px;
-    border-radius: 4px;
+    border-radius: 8px;
     line-height: 27px;
 }
 
@@ -142,6 +143,45 @@ nav a:hover, nav li.active a{
     color: var(--button-color);
 }
 
+footer{
+    margin: 60px 0;
+}
+
+footer .contact-box{
+background-color: var(--container-color);
+padding: 30px;
+border-radius: 8px;
+
+
+    
+
+}
+
+footer .email-link{
+    text-decoration: none;
+    color: #0a0a0a;
+    font-size: 24px;
+
+}
+
+footer .email-link:hover{
+    color: var(--button-color);
+}
+footer .social-icons a{
+    margin: 0 20px;
+    color: var(--button-color);
+    background-color: #e9e7e7;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 18px;
+     border-radius: 50%;
+     transition: all 90ms ease-in-out;
+}
+footer .social-icons a:hover{
+    background-color: var(--button-color);
+    color: #fff;
+}
+
 
 @media (max-width:900px){
     
@@ -157,12 +197,15 @@ nav a:hover, nav li.active a{
         padding: 80px 20px;
     }
     
+    h4{
+        font-size: 26px;
+    }
 .description{
     font-size: 18px;
 }
 
     .project-description{
-        padding:0;
+        padding:10px;
         text-align: center;
     }
     .content h1 {
@@ -180,4 +223,8 @@ nav a:hover, nav li.active a{
     .logo{
         margin-right: 12px;
     }
+    .btn{
+        font-size: 26px;
+    }
+    
 }
