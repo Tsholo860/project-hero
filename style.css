@@ -1,3 +1,21 @@
+/* Reset and responsiveness fixes */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Custom properties */
 :root{
     --background-color:#e6e7eb;
     --button-color:#ff5861;
@@ -7,10 +25,18 @@
     --greeting-color-font:#272142;
     
 }
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
 body{
     background-color: var(--background-color);
     font-family: var(--secondary-font);
-}
+    overflow-x: hidden;
+} 
 h1,h2,h3,h4,h5,h6{
     color:black;
     font-weight: bold;
@@ -217,6 +243,7 @@ footer .social-icons a:hover{
     }
     nav ul{
         gap: 14px;
+        flex-wrap: wrap;
     }
     .logo{
         margin-right: 12px;
@@ -224,5 +251,26 @@ footer .social-icons a:hover{
     .btn{
         font-size: 26px;
     }
+
+    .content{
+        padding: 80px 20px;
+    }
+
+    footer{
+        padding: 0 24px;
+    }
+
+    footer .social-icons a{
+        margin: 0 10px;
+    }
     
+}
+
+@media (max-width:480px){
+    .container{ padding: 40px 16px; }
+    .project-description{ padding: 10px; }
+    footer{ padding: 0 16px; }
+    .navbar-container{ padding: 0 16px; }
+    .container h1{ font-size: 36px; }
+    .content h1{ font-size: 36px; }
 }
